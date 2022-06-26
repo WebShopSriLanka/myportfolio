@@ -1,3 +1,8 @@
+# Data and database files
+data/
+
+
+
 # Logs
 logs
 *.log
