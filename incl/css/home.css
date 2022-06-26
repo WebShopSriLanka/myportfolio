@@ -1,0 +1,625 @@
+
+
+/* 
+COLOURS
+#f9fbfd     - off-white
+#f8f9fa     - off-white 2
+#eff2f5     - silver light 1
+#ffd900     - yellow strong
+#ffe600     - yellow medium
+#0054d1     - blue medium
+#0055b6     - blue dark 
+#00af3a     - green medium
+#50c2ff     - blue light
+*/
+
+
+/* 
+COMMON ELEMENTS 
+AND PAGE
+CSS
+*/
+@media all and (min-width: 0px) {
+.bxshdw-1 {
+    box-shadow: 0px 1px 18px rgba(165, 189, 224, 0.5) !important;
+}
+* {
+    letter-spacing: 0.005em;
+    font-family: 'fb', sans-serif;
+}
+body {
+    font-size: 100%;
+    font-family: 'fb', sans-serif; 
+    background-color: #333;
+    color: #f9fbfd;
+}
+.title {
+    /* Any title, e.g. form title, article header */ 
+}
+.title h1, h2, h3, h4 {
+    /* Any title, e.g. form title, article header */ 
+    letter-spacing: 0.008em;
+}
+a, li, em, strong, h1, h2, h3, h4 {
+    transition: 0.6s cubic-bezier(.5,.7,.7,.5) all;
+}
+
+.dark-theme {
+  filter: invert(86%);
+}
+
+.ux-buttons {
+    position: fixed;
+    z-index: 40;
+    right: 0em;
+    bottom: 0em; 
+    background-color: #ffd900;
+}
+.ux-buttons .unit {
+    position: absolute; 
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2.25em;
+    height: 2.1em;
+    min-width: 2em;
+
+    font-size: 90%;
+    box-shadow: 0px 3px 15px rgba(90, 100, 120, 0.24);
+}
+.ux-buttons .unit img {
+    height: 1.5em;
+    width: auto;
+}
+.ux-buttons .unit-2 {
+    right: 4.8em;
+}
+#fly-to-top:hover {
+    padding-bottom: 24px !important;
+}
+.go-back-button {
+    /* E.g. on forms and admin pages */
+    border: none;
+    min-width: 60px;
+    display: inline-block;
+    padding: 0 !important;
+}
+.go-back-button a {
+    display: inline-block;
+    padding: 4px 6px;
+}
+.go-back-button .line-anim {
+    bottom: -2px;
+}
+
+.footer-page {
+    padding: 24px 24px;
+    color: #eff2f5;
+}
+.footer-page {
+    background-color: #36455c;
+    font-size: 93%;
+}
+.footer-page .footer-nav li {
+    margin: 3px 0;
+}
+.footer-page .footer-nav li a {
+    display: inline-block;
+    min-width: 5em;
+    padding: 3px 3px;
+}
+
+}
+
+
+
+
+/* 
+MODULE
+CSS
+*/
+@media all and (min-width: 0px) {
+
+.module {
+    /* For simple pages and the background image to be filled 
+    so no white space is created in the bottom */
+    min-height: 100vh;
+}
+.module-login {
+    padding-top: 60px;
+    background: url('../../media/images/bkgd/bkgd-abstract-2.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+}
+
+
+
+
+/* 
+BUTTON 
+CSS
+*/
+@media all and (min-width: 0px) {
+.button-subtle {
+    box-shadow: none;
+    padding: 4px 3px;
+    margin: 0;
+    color: #646464;
+}
+.button-subtle:hover {
+    background-color: none;
+}
+.button-art-2 {
+    position: relative;
+    box-shadow: none;
+    display: block;
+    margin: 0 auto;
+    padding: 18px 21px;
+    min-width: 240px;
+    /* width: 420px; */
+}
+.button-art-2:hover {
+    background-color: #ffd900;
+    box-shadow: none !important;
+}
+.button-line-anim { 
+    /* A bottom line animated when user 
+    hovers over the button */
+    position: relative;
+}
+.line-anim {
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 3px;
+    bottom: -4px;
+    border-radius: 0.42em;
+    background-color: rgb(160, 160, 200);
+    transition: 0.6s ease all;
+}
+.button-line-anim:hover {
+}
+.button-line-anim:hover .line-anim {
+    width: 95%;
+}
+}
+
+
+/* 
+Initial 
+Views 
+CSS
+*/
+
+.first-screen .unit {
+    width: 100vw;
+    height: 20vh; 
+    background-color: #0054d1;
+}
+
+
+/* 
+Roles 
+CSS
+*/
+.role-section {
+    width: 50%; 
+    padding: 4.2% 3%; 
+    float: left; 
+    text-align: center;
+}
+.role-title {
+    font-size: 2em; 
+    margin-bottom: 6px 0;
+}
+
+
+
+/* 
+FORM
+CSS
+*/
+@media all and (min-width: 0px) {
+
+.form-outer {
+    position: relative;
+}
+.form-title {
+    margin-bottom: 21px;
+}
+.form-title h2 {
+    font-size: 1.5em;
+}
+.form-subtitle {
+    color: #848484; 
+    margin-top: 15px;
+}
+.form .submit {
+    background-color: #0054d1;
+    color: white;
+    border: none;
+    margin-top: 18px;
+    font-family: fh;
+}
+.form .submit:hover {
+    background-color: #0055b6;
+}
+.form-response-message {
+    display: none;
+    margin-top: 30px; 
+    padding: 12px 12px; 
+    font-family: fh; 
+    border: 1px solid #eee;
+    border-radius: 0.1em;
+    color: #333;
+}
+.form-response-message-displayed {
+    display: block;
+}
+.form-box-secondary {
+    padding: 0 !important;
+}
+.form-box-secondary .input-div {
+    margin: 0 !important;
+}
+.form label {
+    position: relative;
+    color: #777;
+}
+.form .help img {
+    position: relative;
+    height: 1.68em;
+    width: auto;
+    bottom: -6px;
+    left: 4px;
+}
+
+
+.form-art-1 .form-box {
+    width: 420px;
+    margin: 0 auto;
+    padding: 40px 57px;
+    padding-bottom: 48px;
+    background-color: #fff;
+    border-radius: 0.16em;
+    box-shadow: 0px 1px 18px rgba(165, 189, 224, 0.5);
+}
+.form-art-1 .form {
+    width: 306px;
+}
+.form-art-1 .input-div {
+    width: 100%;
+    margin-top: 21px;
+}
+.form-art-1 input {
+    border: 1px solid rgb(215, 215, 225);
+    font-family: fb;
+    padding: 14px 12px;
+    border-radius: 0.16em;
+    /* box-shadow: 0px 1px 9px rgba(165, 189, 224, 0.1); */
+}
+.form-art-1 select {
+    border: 1px solid rgb(215, 215, 225);
+    font-family: fb;
+    padding: 14px 12px;
+    border-radius: 0.16em;
+}
+.form-art-1 textarea {
+    border: 1px solid rgb(215, 215, 225);
+    font-family: fb;
+    padding: 14px 12px;
+    border-radius: 0.16em;
+}
+.form-art-1 .submit {
+    min-width: 200px;
+    width: 216px;
+    border: 2px solid #0054d1; 
+    color: #0054d1;
+    background-color: white;    
+    padding: 16px 12px;
+}
+
+.form-art-1 .submit:hover {
+    background-color: #0055b6;
+    color: white;
+}
+.form-section-button {
+    /* Button to show the next form section 
+    in lengthy complex forms */ 
+    padding: 10px 12px;
+    padding-bottom: 11px;
+    margin-top: 15px;
+    cursor: pointer;
+    line-height: 1.15;
+    display: inline-block;
+    text-align: center;
+    box-shadow: none;
+    min-width: 140px;
+    border: 2px solid #333;
+    transition: 0.6s ease all;
+}
+.form-section-button:hover {
+    background-color: #0055b6;
+    color: white;
+}
+
+.form-pagination {
+    /* To navigate to form sections (views) */ 
+    padding-left: 3px;
+    margin-top: -1px;
+}
+.form-pagination .paginate-button {
+    border-radius: 50%;
+    color: #333;
+    border: 1px solid #555;
+    /* font-family: fh; */
+    font-size: 99%;
+    display: inline-block;
+    margin-right: 8px;
+    padding: 3px 3px;
+    height: 1.75em;
+    width: 1.75em;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s ease all;
+}
+.form-pagination .paginate-button:hover {
+    background-color: #ffe900;
+}
+}
+
+
+
+
+/* 
+DATATABLE 
+CSS
+*/
+
+@media all and (min-width: 0px) {
+.datatable-outer {
+    margin-bottom: 30px;
+}
+.datatable {
+    max-width: 1600px;
+    margin-left: 0 !important;
+}
+.datatable #myTable tr td {
+    /* Reset default style */
+    background: none !important;
+}
+.datatable #myTable tr:nth-child(even) {
+    background-color: #fff !important;
+}
+.datatable #myTable tr:nth-child(odd) {
+    background-color: #fafbfd !important;
+}
+.datatable .dataTables_filter {
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+button.dt-button {
+    /* Datatable export buttons, e.g. Print */
+    background: none;
+    background-color: #fff;
+    border: none;
+    margin-right: 6px; 
+    font-size: 97%;
+    min-width: 5em;
+}
+button.dt-button:hover {
+    background: none !important;
+    background-color: #f8f9fa;
+    border: none !important;
+}
+table .button {
+    color: #555 !important;
+    background-color: #ffff;
+    border: 1px solid #ccc;
+    border-radius: 0.1em;
+}
+table .button:hover {
+    font-family: fh;
+}
+.td-subtle {
+    color: #777;
+    font-size: 93%;
+}
+}
+
+
+
+
+/* 
+ADMIN 
+DASHBOARD 
+CSS
+*/ 
+@media all and (min-width: 0px) {
+.module-admin {
+}
+.admin-segment {
+    min-height: 100vh;
+}
+.admin-view-body {
+    flex-grow: 1;
+    min-width: 80%;
+    padding: 24px 24px;
+
+    text-align: left;
+    background-color: #eff2f5;
+    /* background-color: #c2c8ce; */
+
+}
+.admin .segment .in {
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0px 1px 9px rgba(165, 189, 224, 0.5);
+}
+.admin .subsegment {
+    margin-top: 15px;
+}
+.admin .segment-title {
+    display: inline-block;
+    width: 360px;
+    padding: 10px 12px;
+    padding-bottom: 10px;
+    margin-bottom: 9px;
+}
+.segment-title img {
+    height: 1.05em;
+    width: auto;
+    position: absolute;
+    margin-left: 12px;
+}
+
+
+.admin-nav-main { 
+    position: relative;
+    float: right;
+    width: 280px;
+    width: calc(180px + 5%);
+    padding-top: 30px;
+    background-color: rgb(248, 251, 255);
+}
+.admin-nav-main .nav-logo {
+    margin-bottom: 18px;
+}
+.admin-nav-main .nav-logo img {
+    width: 60px;
+    height: auto;
+}
+.admin-nav-main nav li {
+    text-align: left;
+}
+.admin-nav-main nav li a {
+    display: inline-block;
+    width: 90%;    
+    margin-left: 5%;
+    padding: 12px 12px;
+    padding-left: 17px;
+    color: #555;
+    font-size: 93%;
+    /* border-bottom: 1px solid rgb(200, 200, 225); */
+}
+.admin-nav-main nav li a:hover {
+    background-color: #ffe600;
+    background-color: #00ade2;
+    color: #202020;
+    color: #fff;
+    width: 80%;
+    border-radius: 2em;
+}
+.admin-nav-main nav li img {
+    position: relative;
+    height: 1.45em;
+    width: auto;
+    margin-bottom: -6px;
+    margin-right: 10px;
+    opacity: 0.84;
+}
+
+.segment-links button {
+    background-color: transparent;
+    box-shadow: none;
+    margin-left: 0;
+    margin-right: 1px;
+    padding: 6px 10px;
+    font-size: 90%;
+    color: #333;
+    min-width: 5em;
+    /* border: 0.12em solid #333; */
+    border-radius: 1.2em; 
+    transition: 0.8s ease all;
+    
+    /* font-weight: bold; */
+}
+.segment-links button:hover {
+    /* font-weight: bold; */
+    /* font-size: 86%; */
+    /* letter-spacing: -0.016em; */
+    padding-top: 7px;
+    background: linear-gradient(270deg, #1bca87, #0097ee);
+    /* background: #0097ee; */
+    color: white;
+    /* border: 1px solid #fafbfd; */
+}
+}
+
+
+
+
+/* 
+GUIDES 
+CSS
+*/
+
+@media all and (min-width: 0px) {
+
+.guide {
+    padding: 12px 21px; 
+}
+.guide .section {
+    padding: 12px 0px; 
+}
+.guide .title {
+    font-family: fh; 
+    margin: 3px 0;
+}
+.guide .para {
+
+}
+
+}
+
+
+
+
+
+/* 
+WRITER 
+DOCS IMSG
+CSS
+*/
+
+@media all and (min-width: 0px) {
+.module-writer {
+    width: 100%;
+}
+.writer-nav-main {
+    float: left;
+    background-color: #333; 
+    color: #fcfcfc;
+}
+.writer-nav-main li a {
+    color: #fcfcfc !important;
+}
+.writer-nav-main li a img {
+    filter: invert(1);
+}
+.writer-page {
+}
+.document-writing-view {
+    /* This is where users write stuff */
+    background-color: white;
+    padding: calc(141px * 0.5);
+
+
+    /* Height and width to be proportionate 
+    as an A4 paper sheet */
+    height: calc(1414px * 0.80);
+    width:  calc(1000px * 0.80);
+}
+.text-edit-menu-popup {
+    position: fixed;
+    z-index: 30;
+    left: 300px;
+    top: 150px;
+    background-color: #333;
+    color: #fcfcfc;
+    border: 2px solid #ffd900;
+    padding: 5px 6px;
+}
+
+}
