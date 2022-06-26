@@ -9,25 +9,27 @@
 
 <div class="outer">
     <div class="first-screen cf">
+
         <div class="inner flex">
 
-            <div class="unit one">
+            <div class="unit one fadeOut anim-s3 wow">
 
             </div>
-            <div class="unit two">
+            <div class="unit two fadeOut anim-s4 wow">
                 
             </div>
-            <div class="unit three">
+            <div class="unit three fadeOut anim-s5 wow">
                 
             </div>
-            <div class="unit four">
+            <div class="unit four fadeOut anim-s6 wow">
                 
             </div>
-            <div class="unit five">
+            <div class="unit five fadeOut anim-s7 wow">
                 
             </div>
 
         </div>
+        
     </div>
     <!-- first-screen -->
 </div>
