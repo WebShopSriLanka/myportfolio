@@ -138,6 +138,34 @@
   animation-fill-mode: both;
   animation-delay: 7.5s;
 }
+.anim-s16 {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 8s;
+}
+.anim-s17 {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 8.5s;
+}
+.anim-s18 {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 9s;
+}
+.anim-s19 {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 9.5s;
+}
 .anim-s20 {
   -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;

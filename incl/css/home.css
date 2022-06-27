@@ -31,7 +31,7 @@ CSS
     color: #f9fbfd;
   }
   .title {
-    /* Any title, e.g. form title, article header */
+  /* Any title, e.g. form title, barticle header */
   }
   .title h1,
   h2,
@@ -177,12 +177,99 @@ CSS
     background-color: rgb(160, 160, 200);
     transition: 0.6s ease all;
   }
-  .button-line-anim:hover {
-  }
+ 
   .button-line-anim:hover .line-anim {
     width: 95%;
   }
 }
+
+
+
+/* 
+Projects 
+Work Samples 
+CSS
+*/ 
+
+.projects .title .heading {
+  margin: 3em 3%;
+  color: white;
+}
+.project .title .text {
+  text-align: center;
+}
+.project .images {
+  padding: 1.5em 2%;
+}
+.project .image {
+  width: 80%;
+  margin: 4.5% 10%;
+  text-align: center;
+}
+.project .image img {
+  cursor: pointer;
+  transform: perspective(1000px);
+  transition: 0.7s cubic-bezier(.5,.7,.7,.5) all;
+}
+.image-w25 img {
+  width: 25%;
+  min-width: 25%;
+}
+.image-w30 img {
+  width: 30%;
+  min-width: 30%;
+}
+.image-w40 img {
+  width: 40%;
+  min-width: 40%;
+}
+.image-w50 img {
+  width: 50%;
+  min-width: 50%;
+}
+.image-w60 img {
+  width: 60%;
+  min-width: 60%;
+}
+.image-w70 img {
+  width: 70%;
+  min-width: 70%;
+}
+.image-w80 img {
+  width: 80%;
+  min-width: 80%;
+}
+.image-w90 img {
+  width: 90%;
+  min-width: 90%;
+}
+.image-w100 img {
+  width: 100%;
+  min-width: 100%;
+}
+
+.project .image img:hover {
+  /* animation: project-image-anim-1 5s ease-in both 1;   */
+}
+
+.slide-bottom-3 {
+}
+@keyframes project-image-anim-1 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg)
+  }
+  50% {
+    transform: rotateX(-20deg) rotateY(10deg) rotateZ(-10deg);    
+  }    
+  70% {
+    /* transform: rotateX(6deg) rotateY(15deg);     */
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);    
+  }
+  }
+
+
 
 /* 
 Initial 
@@ -206,29 +293,35 @@ CSS
   width: 100%;
   position: relative;
 background-color: #202020;
-background-color: #fff;
+background-color: #eff2f5;
+}
+.landscape .col-title .heading {
+  font-family: fontLight;
+  /* text-transform: uppercase; */
+}
+.landscape .col-title .title-part {
+  display: block; 
+  margin-bottom: 9px;
 }
 .landscape .unit-group {
     display: block;
     width: 100%;
-    height: 20vh;
     position: relative;
-    margin: 0 auto;
+    margin: 2em auto;
     text-align: center;
 }
 .landscape .col {
     display: block;
-    width: 40%;
+    width: 600px;
     float: left;
     text-align: center;
 }
 .landscape .design-col {
-    margin-right: 5%;
+    /* margin-left: 5%; */
 }
 .landscape .code-col {
-    margin-left: 5%;
+    /* margin-right: 5%; */
 }
-
 .ground-line {
   width: 96%;
   height: 2px;
@@ -269,6 +362,10 @@ background-color: #fff;
 }
 .photoshop-logo img {
     transform: perspective(200px) translate3d(0px, 0px, 0px) rotateX(-15deg) rotateY(10deg);
+    margin-bottom: 12[x];;
+}
+.figma-logo img {
+    transform: perspective(200px) translate3d(0px, 0px, 0px) rotateX(-15deg) rotateY(10deg);
 }
 .html-logo img {
     transform: perspective(200px) translate3d(0px, 0px, 0px) rotateX(20deg) rotateY(-10deg);
@@ -283,10 +380,11 @@ background-color: #fff;
     transform: perspective(200px) translate3d(0px, 0px, 0px) rotateX(20deg) rotateY(-10deg);
 }
 .landscape .google-ga-logo {
-    width: 270px;
+    width: 288px;
 }
 .landscape .data-mining-logo {
-    width: 270px;
+    width: 288px;
+    margin-bottom: 18px;
 }
 .google-ga-logo img {
     width: 100%;
@@ -302,9 +400,9 @@ background-color: #fff;
 
 
 .slide-bottom {
-  -webkit-animation: slide-bottom 3s ease-in-out both
+  -webkit-animation: slide-bottom 4s ease-in-out both
     900;
-  animation: slide-bottom 3s ease-in-out both 900;
+  animation: slide-bottom 4s ease-in-out both 900;
 }
 @keyframes slide-bottom {
   0% {
@@ -321,9 +419,9 @@ background-color: #fff;
   }
 }
 .slide-bottom-2 {
-  -webkit-animation: slide-bottom-2 3.2s ease-in-out both
+  -webkit-animation: slide-bottom-2 4.3s ease-in-out both
     900;
-  animation: slide-bottom-2 3.2s ease-in-out both 900;
+  animation: slide-bottom-2 4.3s ease-in-out both 900;
 }
 @keyframes slide-bottom-2 {
   0% {
@@ -340,9 +438,9 @@ background-color: #fff;
   }
 }
 .slide-bottom-3 {
-  -webkit-animation: slide-bottom-2 2.8s ease-out both
+  -webkit-animation: slide-bottom-2 3.75s ease-out both
     900;
-  animation: slide-bottom-2 2.8s ease-out both 900;
+  animation: slide-bottom-2 3.75s ease-out both 900;
 }
 @keyframes slide-bottom-3 {
   0% {
@@ -625,181 +723,214 @@ CSS
   }
 }
 
+
+
+
+
 /* 
-ADMIN 
-DASHBOARD 
+Design 
+Workflow 
 CSS
 */
-@media all and (min-width: 0px) {
-  .module-admin {
-  }
-  .admin-segment {
-    min-height: 100vh;
-  }
-  .admin-view-body {
-    flex-grow: 1;
-    min-width: 80%;
-    padding: 24px 24px;
 
-    text-align: left;
-    background-color: #eff2f5;
-    /* background-color: #c2c8ce; */
-  }
-  .admin .segment .in {
-    background-color: white;
-    border-radius: 0.3em;
-    box-shadow: 0px 1px 9px rgba(165, 189, 224, 0.5);
-  }
-  .admin .subsegment {
-    margin-top: 15px;
-  }
-  .admin .segment-title {
-    display: inline-block;
-    width: 360px;
-    padding: 10px 12px;
-    padding-bottom: 10px;
-    margin-bottom: 9px;
-  }
-  .segment-title img {
-    height: 1.05em;
-    width: auto;
-    position: absolute;
-    margin-left: 12px;
-  }
-
-  .admin-nav-main {
-    position: relative;
-    float: right;
-    width: 280px;
-    width: calc(180px + 5%);
-    padding-top: 30px;
-    background-color: rgb(248, 251, 255);
-  }
-  .admin-nav-main .nav-logo {
-    margin-bottom: 18px;
-  }
-  .admin-nav-main .nav-logo img {
-    width: 60px;
-    height: auto;
-  }
-  .admin-nav-main nav li {
-    text-align: left;
-  }
-  .admin-nav-main nav li a {
-    display: inline-block;
-    width: 90%;
-    margin-left: 5%;
-    padding: 12px 12px;
-    padding-left: 17px;
-    color: #555;
-    font-size: 93%;
-    /* border-bottom: 1px solid rgb(200, 200, 225); */
-  }
-  .admin-nav-main nav li a:hover {
-    background-color: #ffe600;
-    background-color: #00ade2;
-    color: #202020;
-    color: #fff;
-    width: 80%;
-    border-radius: 2em;
-  }
-  .admin-nav-main nav li img {
-    position: relative;
-    height: 1.45em;
-    width: auto;
-    margin-bottom: -6px;
-    margin-right: 10px;
-    opacity: 0.84;
-  }
-
-  .segment-links button {
-    background-color: transparent;
-    box-shadow: none;
-    margin-left: 0;
-    margin-right: 1px;
-    padding: 6px 10px;
-    font-size: 90%;
-    color: #333;
-    min-width: 5em;
-    /* border: 0.12em solid #333; */
-    border-radius: 1.2em;
-    transition: 0.8s ease all;
-
-    /* font-weight: bold; */
-  }
-  .segment-links button:hover {
-    /* font-weight: bold; */
-    /* font-size: 86%; */
-    /* letter-spacing: -0.016em; */
-    padding-top: 7px;
-    background: linear-gradient(270deg, #1bca87, #0097ee);
-    /* background: #0097ee; */
-    color: white;
-    /* border: 1px solid #fafbfd; */
-  }
+.workflow {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #333;
+}
+.workflow .col {
+  width: 25%;
+  height: 100vh; 
+  float: left;
+  padding: 3% 0%;
+}
+.workflow .unit .title .heading {
+  font-size: 2.56em;
+  /* text-transform: uppercase; */
+  font-family: fontLight;
+  letter-spacing: 0.02em;
+  line-height: 1.48;
 }
 
-/* 
-GUIDES 
-CSS
-*/
 
-@media all and (min-width: 0px) {
-  .guide {
-    padding: 12px 21px;
+
+
+
+  .design-workflow {
+      background-color: #202020;  
+      background: linear-gradient(
+          100deg,
+          rgba(41, 42, 44, 0) 0%,
+          rgba(46, 49, 53, 0) 50%,
+          rgba(21, 22, 22, 0) 100%
+        ),
+        url('../../media/img/bkgd/bkgd-01.jpg'); 
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: top left;
+      background-repeat: repeat;
   }
-  .guide .section {
-    padding: 12px 0px;
+  .design-workflow .title h2 {
+      text-align: center;
+      font-family: fh;
+      color: #fcfcfc;
+      letter-spacing: -0.01em;
+      line-height: 1.16;
+      margin-bottom: 1.5%;
+      text-transform: uppercase;
+      text-shadow: 8px 5px 20px #3b3e41;
   }
-  .guide .title {
-    font-family: fh;
-    margin: 3px 0;
+  .design-workflow .col  {
+      /* Country column */
+      opacity: 0.96;
+      position: relative;
+      min-height: 320px;
+      cursor: pointer; 
+      transition: 1.00s ease-in all;
   }
-  .guide .para {
+  .design-workflow .col:hover .images {
+      bottom: -15vh;
   }
+  .design-workflow .unit .title {
+      color: #f9f9f9;
+      padding: 9px 15px;
+      padding-bottom: 12px;
+      /* width: 70%; */
+      margin: 0 auto;
+      z-index: 11;
+      text-shadow: 8px 5px 20px #515c66;
+  }
+  .design-workflow .unit .images {
+      width: 100%; 
+      min-width: 160px;
+      margin: 0 auto;
+      position: relative;
+      bottom: -40vh;
+      z-index: 10;
+      transition: 1.5s ease-out all;
+      /* transition: 2.7s cubic-bezier(.5,.7,.7,.5) all; */
+  }
+  
+  .design-workflow .unit {
+  }
+  .design-workflow .unit:hover {
+      background: linear-gradient(
+          100deg,
+          rgba(41, 42, 44, 0.08) 0%,
+          rgba(46, 49, 53, 0.07) 20%,
+          rgba(32, 33, 34, 0.7) 40%,
+          rgba(21, 22, 22, 0.07) 80%,
+          rgba(21, 22, 22, 0.08) 100%
+        ),
+        url('../../media/img/bkgd/bkgd-01.jpg'); 
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: center;
+      background-repeat: repeat;
+  
+  }
+  .design-workflow .three {
+      background: linear-gradient(
+          100deg,
+          rgba(26, 26, 27, 0.8) 0%,
+          rgba(24, 24, 26, 0.8) 20%,
+          rgba(32, 33, 34, 0.84) 40%,
+          rgba(21, 22, 22, 0.8) 80%,
+          rgba(21, 22, 22, 0.8) 100%
+        ),
+        url('../../media/img/fp/bkgd02.jpg'); 
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .design-workflow .three:hover {
+      background: linear-gradient(
+          100deg,
+          rgba(26, 26, 27, 0.1) 0%,
+          rgba(24, 24, 26, 0.3) 20%,
+          rgba(32, 33, 34, 0.3) 40%,
+          rgba(21, 22, 22, 0.3) 80%,
+          rgba(21, 22, 22, 0.1) 100%
+        ),
+        url('../../media/img/fp/bkgd02.jpg');
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: top right;
+      background-repeat: no-repeat;
+  }
+  .design-workflow .four {
+      background: linear-gradient(
+          100deg,
+          rgba(26, 26, 27, 0.8) 0%,
+          rgba(24, 24, 26, 0.8) 20%,
+          rgba(32, 33, 34, 0.84) 40%,
+          rgba(21, 22, 22, 0.8) 80%,
+          rgba(21, 22, 22, 0.8) 100%
+        ),
+        url('../../media/img/fp/js-php.jpg'); 
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+  }
+  .design-workflow .four:hover {
+      background: linear-gradient(
+          100deg,
+          rgba(26, 26, 27, 0.8) 10%,
+          rgba(24, 24, 26, 0.7) 20%,
+          rgba(32, 33, 34, 0.0) 60%,
+          rgba(21, 22, 22, 0.7) 80%,
+          rgba(21, 22, 22, 0.7) 100%
+        ),
+        url('../../media/img/fp/js-php.jpg');
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+  }
+
+  .design-workflow .unit .subtitle {
+      font-size: 1.4em;
+      font-family: fb;
+      color: white;
+      line-height: 1.6;
+      letter-spacing: 0.025em;
+      margin-top: 18px;
+      padding: 15px 18px;
+      transition: 0.7s cubic-bezier(.5,.7,.7,.5) all;
+  }
+
+
+  .workflow .images .line-man-thinking {
+    width: 40%;
+  }
+  .workflow .images .line-man-coding {
+    width: 48%;
+  }
+
+  .workflow .images .ruler {
+    width: 68%;
+    margin-left: -6%;
+    opacity: 0.99;
+    transform: rotateX(-10deg) rotateY(-20deg) rotateZ(-20deg); 
+  }
+  .workflow .col:hover .images .ruler {
+    opacity: 0.80;
+  }
+
+
+  
+
+
+.animation-paused {
+  animation: none !important;
+  animation-play-state: paused !important;
 }
-
-/* 
-WRITER 
-DOCS IMSG
-CSS
-*/
-
-@media all and (min-width: 0px) {
-  .module-writer {
-    width: 100%;
-  }
-  .writer-nav-main {
-    float: left;
-    background-color: #333;
-    color: #fcfcfc;
-  }
-  .writer-nav-main li a {
-    color: #fcfcfc !important;
-  }
-  .writer-nav-main li a img {
-    filter: invert(1);
-  }
-  .writer-page {
-  }
-  .document-writing-view {
-    /* This is where users write stuff */
-    background-color: white;
-    padding: calc(141px * 0.5);
-
-    /* Height and width to be proportionate 
-    as an A4 paper sheet */
-    height: calc(1414px * 0.8);
-    width: calc(1000px * 0.8);
-  }
-  .text-edit-menu-popup {
-    position: fixed;
-    z-index: 30;
-    left: 300px;
-    top: 150px;
-    background-color: #333;
-    color: #fcfcfc;
-    border: 2px solid #ffd900;
-    padding: 5px 6px;
-  }
+.animation-paused-logo {
+  animation: none !important;
+  animation-play-state: paused !important; 
+  filter: saturate(1.4);
+}
+.landscape .design-col {
 }
