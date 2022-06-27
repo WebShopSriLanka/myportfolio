@@ -1,68 +1,113 @@
-<div class="workflow design-workflow cf">
-    <div class="inner cf flex flex-center">
+<div class="timeline cf">
 
-        <div class="unit col fadeInDown anim-s2 anim-fast wow">
+    <div class="calendars cf flex">
 
-            <div class="title">
-                <div class="heading">
-                    Thinking <br> Client Story <br>Research
-                </div>
-            </div>
-
-            <div class="images">
-                <img src="media/img/artwork/line-man-thinking.png" alt="artwork" class="line-man-thinking">
-
-                <img src="media/img/artwork/hello-7.png" alt="artwork">
-            </div>
-
+        <div class="calendar one">
+            <img src="media/img/calendars/2007.png" alt="website timeline calendar">
         </div>
-        <!-- unit -->
-
-        <div class="unit col two fadeInUp anim-s5 anim-fast wow">
-
-            <div class="title">
-                <div class="heading">Content Writeup<br> Artwork Design <br>Data Plan & Database</div>
-            </div>
-
-            <div class="images ">
-            </div>
-
+        <div class="calendar two">
+            <img src="media/img/calendars/2010.png" alt="website timeline calendar">
         </div>
-        <!-- unit -->
-
-        <div class="unit col three fadeInDown anim-s8  anim-fast wow">
-
-            <div class="title">
-                <div class="heading">UI & UX <br>Client Approval<br> Coding</div>
-            </div>
-
-            <div class="images">
-                <img src="media/img/artwork/line-man-coding.png" alt="artwork" class="line-man-coding">
-            </div>
-
+        <div class="calendar three">
+            <img src="media/img/calendars/2012.png" alt="website timeline calendar">
         </div>
-        <!-- unit -->
-
-
-        <div class="unit col four fadeInUp anim-s11 anim-fast wow">
-
-            <div class="title">
-                <div class="heading">Testing & Improving <br>Device, Browser, SEO, Technical <br> Server & Hosting<br>User Training</div>
-            </div>
-
-            <div class="images">
-                <img src="media/img/fp/circular-ruler.png" alt="artwork" class="ruler  slide-bottom-3">
-            </div>
-
+        <div class="calendar four">
+            <img src="media/img/calendars/2007.png" alt="website timeline calendar">
         </div>
-        <!-- unit -->
-
-
-
-        <!-- unit -->
-
-
-
+        <div class="calendar five">
+            <img src="media/img/calendars/2012.png" alt="website timeline calendar">
+        </div>
     </div>
+    <!-- calendars -->
+
+
+    <div class="disclaimer">
+        <div class="spcd"></div>
+        <div class="text fnts">Calendar 3D mockup acquired through Ariel.</div>
+    </div>
+
+    <div class="capsa100 tac cf flex flex-center">
+        <div class="button button-3">
+            NEXT
+        </div>
+        <div class="arrow-image cf">
+            <img src="media/img/icons/arrow-right-1.png">
+        </div>
+    </div>
+
+
 </div>
-<!-- design-workflow -->
+<!-- timeline -->
+
+
+<script>
+    $(document).ready(function() {
+        $('.timeline .button-3').on('mouseover', function() {
+            // $('.timeline .arrow-image img').addClass('show fadeIn anim-fast wow slide-bottom');
+            // $('.timeline .button-3').css('color', '#0ea825');
+        })
+        $('.timeline .button-3').on('mouseleave', function() {
+            // $('.timeline .arrow-image img').removeClass('show fadeIn anim-fast wow');
+        })
+
+
+
+
+        // $('.calendars .two').css('opacity', '0');
+        // $('.calendars .three').css('opacity', '0');
+        // $('.calendars .four').css('opacity', '0');
+        // $('.calendars five').css('opacity', '0');
+
+        $('.calendars .two').css('display', 'none');
+        $('.calendars .three').css('display', 'none');
+        $('.calendars .four').css('display', 'none');
+        $('.calendars .five').css('display', 'none');
+
+
+        var currentCalendar = 1;
+        console.log(currentCalendar);
+
+        if (currentCalendar === 1) {
+            $('.timeline .button-3').on('click', function() {
+                $('.calendars .one').css('display', 'none');
+                $('.calendars .two').css('display', 'block');
+                currentCalendar = 2;
+                console.log(currentCalendar);
+            });
+        }
+
+        if (currentCalendar === 2) {
+            $('.timeline .button-3').on('click', function() {
+                $('.calendars .two').css('display', 'none');
+                $('.calendars .three').css('display', 'block');
+                currentCalendar = 3;
+                console.log(currentCalendar);
+            });
+        }
+
+        if (currentCalendar === 3) {
+            $('.timeline .button-3').on('click', function() {
+                $('.calendars .three').css('display', 'none');
+                $('.calendars .four').css('display', 'block');
+                currentCalendar = 4;
+                console.log(currentCalendar);
+            });
+        }
+
+        if (currentCalendar === 4) {
+            $('.timeline .button-3').on('click', function() {
+                $('.calendars .four').css('display', 'none');
+                $('.calendars .five').css('display', 'block');
+                currentCalendar = 5;
+            });
+        }
+
+        if (currentCalendar === 5) {
+            $('.timeline .button-3').on('click', function() {
+                $('.calendars .five').css('display', 'none');
+                $('.calendars .one').css('display', 'block');
+                currentCalendar = 1;
+            });
+        }
+    });
+</script>

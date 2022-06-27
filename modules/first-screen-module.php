@@ -5,5 +5,5 @@
     include 'views/ui/timeline.php';
     include 'views/ui/design-workflow.php';
     include 'views/ui/welcome-landscape.php';
-    include 'views/ui/projects.php';
+    // include 'views/ui/projects.php';
 ?>
