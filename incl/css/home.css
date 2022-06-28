@@ -767,6 +767,7 @@ Timeline CSS
   line-height: 1.15;
   font-size: 1.54em;
   color: #1bb131;
+  text-transform: uppercase;
   font-family: fontBody;
   /* font-weight: bold; */
 }
