@@ -18,7 +18,7 @@
 include 'modules/first-screen-module.php'; 
 
 // Key job roles
-include 'modules/roles-module.php'; 
+// include 'modules/roles-module.php'; 
 
 // Work samples - website designs, post artwork 
 include 'modules/work-samples-module.php'; 
