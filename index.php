@@ -10,6 +10,8 @@
     include_once 'incl/global/incl-global.php';
     include_once 'incl/global/incl-head.php';
     ?>
+
+    
 </head>
 <body>
 
@@ -23,6 +25,20 @@ include 'modules/first-screen-module.php';
 // Work samples - website designs, post artwork 
 include 'modules/work-samples-module.php'; 
 ?>
+
+<div class="capsa50-100 mission-statement cf fntd">
+    
+Only ONE purpose 
+<div class="spca"></div>
+
+<p class="fnts">
+Let your future bosses see what you have created 
+<div class="spca"></div>
+
+(what you are able to do for them).
+<div class="spca"></div>
+</p>
+</div>
     
 </body>
 </html>

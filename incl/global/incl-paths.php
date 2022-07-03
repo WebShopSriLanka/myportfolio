@@ -94,6 +94,10 @@ $path_website = "https://ulcworld.com";
 
 $path_ga_tag =  __ROOT__ . '/incl/global/analytics/ga-tag.php';
 
+
+// Path for UI and UX components
+$path_button_show_ux_points = 'views/ux/button-show-ux-points.php';
+
 ?>
 <?php
 // To include essential and system-wide functions

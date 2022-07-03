@@ -960,7 +960,8 @@ h4 {
 
 @font-face {
     font-family: fontheading;
-    src: url(../fonts/MontserratBold.ttf);   
+    /* src: url(../fonts/MontserratBold.ttf);    */
+    src: url(../fonts/Gotham-Bold.ttf);   
 }
 @font-face {
     font-family: fontheading2;
@@ -970,15 +971,15 @@ h4 {
 
 @font-face {
     font-family: fontbody;
-    src: url(../fonts/Montserrat-Light.otf)  
+    src: url(../fonts/Calibre-Regular.ttf)  
 }
 @font-face {
     font-family: fontlight;   
-    src: url(../fonts/Inter-ExtraLight.ttf);          
+    src: url(../fonts/Calibre-Light.ttf);          
 }
 @font-face {
     font-family: fs;
-    
+    src: url(../fonts/JetBrainsMonoNL-Thin.ttf);
 }
 .font-fs {
     font-family: fs, sans-serif;

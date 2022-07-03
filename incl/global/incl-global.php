@@ -112,32 +112,32 @@ $email_header = $email_header_part_1 . '' . $email_header_part_2;
 // }
 
 // TEMPORARY !!!
-if (isset($_SESSION['user_logged_in'])) {
-    if ($_SESSION['user_logged_in'] === 1) {
-        $ssn_user_clearance = $_SESSION['user_clearance_level'];
-        $user_clearance = $_SESSION['user_clearance_level'];
-        $user_id = $_SESSION['user_id'];
-        $user_role = $_SESSION['user_role'];
+// if (isset($_SESSION['user_logged_in'])) {
+//     if ($_SESSION['user_logged_in'] === 1) {
+//         $ssn_user_clearance = $_SESSION['user_clearance_level'];
+//         $user_clearance = $_SESSION['user_clearance_level'];
+//         $user_id = $_SESSION['user_id'];
+//         $user_role = $_SESSION['user_role'];
 
-        $manager_approval_status = $_SESSION['user_approval_status'];
+//         $manager_approval_status = $_SESSION['user_approval_status'];
 
-        $user_email = $_SESSION['user_email'];
-        $user_first_name = $_SESSION['user_name'];
-        $user_first_name = $_SESSION['user_first_name'];
-        $user_last_name = $_SESSION['user_last_name'];
-        $user_full_name = $user_first_name . ' ' . $user_last_name;
-        $user_last_name_letter = substr($user_last_name, 0, 1);
-        $user_full_name_brief = $user_first_name . ' ' . $user_last_name_letter . '.';
+//         $user_email = $_SESSION['user_email'];
+//         $user_first_name = $_SESSION['user_name'];
+//         $user_first_name = $_SESSION['user_first_name'];
+//         $user_last_name = $_SESSION['user_last_name'];
+//         $user_full_name = $user_first_name . ' ' . $user_last_name;
+//         $user_last_name_letter = substr($user_last_name, 0, 1);
+//         $user_full_name_brief = $user_first_name . ' ' . $user_last_name_letter . '.';
 
-        $manager_email = $_SESSION['user_email'];
-        $manager_first_name = $_SESSION['user_name'];
-        $manager_first_name = $_SESSION['user_first_name'];
-        $manager_last_name = $_SESSION['user_last_name'];
-        $manager_full_name = $manager_first_name . ' ' . $manager_last_name;
-        $manager_last_name_letter = substr($manager_last_name, 0, 1);
-        $manager_full_name_brief = $manager_first_name . ' ' . $manager_last_name_letter . '.';
-    }
-}
+//         $manager_email = $_SESSION['user_email'];
+//         $manager_first_name = $_SESSION['user_name'];
+//         $manager_first_name = $_SESSION['user_first_name'];
+//         $manager_last_name = $_SESSION['user_last_name'];
+//         $manager_full_name = $manager_first_name . ' ' . $manager_last_name;
+//         $manager_last_name_letter = substr($manager_last_name, 0, 1);
+//         $manager_full_name_brief = $manager_first_name . ' ' . $manager_last_name_letter . '.';
+//     }
+// }
 
 // To round up the value to an integer and 
 // then to the nearest multiple of 5

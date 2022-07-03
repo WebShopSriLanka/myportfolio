@@ -12,22 +12,29 @@
 
         <div class="inner flex">
 
-            <div class="unit one fadeOut anim-s3 wow">
-
+        <div class="unit one fadeOut anim-s8 wow">
             </div>
-            <div class="unit two fadeOut anim-s4 wow">
+
+            <div class="unit one fadeOut anim-s7 wow">
+            </div>
+
+            <div class="unit two fadeOut anim-s6 wow">
                 
             </div>
             <div class="unit three fadeOut anim-s5 wow">
                 
             </div>
-            <div class="unit four fadeOut anim-s6 wow">
+            <div class="unit four fadeOut anim-s4 wow">
                 
             </div>
-            <div class="unit five fadeOut anim-s7 wow">
-                
+            <div class="unit five fadeOut anim-s3 wow">                
             </div>
 
+            <div class="unit one fadeOut anim-s2 wow">
+            </div>
+            
+            <div class="unit one fadeOut anim-s1 wow">
+            </div>
         </div>
         
     </div>

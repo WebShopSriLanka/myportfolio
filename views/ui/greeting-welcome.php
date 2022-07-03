@@ -9,8 +9,11 @@
 
         <div class="greeting-salutation">
             <div class="text fntvvl">
-                <span class="letter-1">H</span>
-                <span class="letter-2 fnts">i</span>
+                <span class="letter letter-1 fadeIn anim-s11 wow">H</span>
+                <span class="letter letter-2 fadeIn anim-s12 wow">i</span>
+                <!-- <span class="letter letter-3 fadeIn anim-s14 wow"></span> -->
+                <!-- <span class="letter letter-4 fnts fadeIn anim-s12 wow">i</span>
+                <span class="letter letter-5 fnts fadeIn anim-s12 wow">o</span> -->
             </div>
         </div>
         <!-- greeting -->
